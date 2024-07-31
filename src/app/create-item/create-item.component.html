@@ -1,0 +1,69 @@
+<!-- create-item.component.html -->
+<div>
+    
+   <form (ngSubmit)="onSubmit()" #itemForm="ngForm">
+  <!-- <div>
+    <label for="id">ID:</label><br>
+    <input type="text" id="id" [(ngModel)]="item.id" name="id" required>
+  </div> -->
+
+  <div>
+    <label for="marka">Marka:</label><br>
+    <input type="text" id="marka" [(ngModel)]="item.marka" name="marka" required>
+  </div>
+
+  <div>
+    <label for="model">Model:</label><br>
+    <input type="text" id="model" [(ngModel)]="item.model" name="model" required>
+  </div>
+
+  <div>
+    <label for="tipi">Tipi:</label><br>
+    <input type="text" id="tipi" [(ngModel)]="item.tipi" name="tipi" required>
+  </div>
+
+  <div>
+    <label for="resim">Resim:</label><br>
+    <input type="text" id="resim" [(ngModel)]="item.resim" name="resim" required>
+  </div>
+
+  <div>
+    <label for="vitesTuru">Vites Türü:</label><br>
+    <input type="text" id="vitesTuru" [(ngModel)]="item.vitesTuru" name="vitesTuru" required>
+  </div>
+
+  <div>
+    <label for="yakitTuru">Yakıt Türü:</label><br>
+    <input type="text" id="yakitTuru" [(ngModel)]="item.yakitTuru" name="yakitTuru" required>
+  </div>
+
+  <div>
+    <label for="gunlukUcret">Günlük Ücret:</label><br>
+    <input type="text" id="gunlukUcret" [(ngModel)]="item.gunlukUcret" name="gunlukUcret" required>
+  </div>
+
+  <div>
+    <label for="kisiSayisi">Kişi Sayısı:</label><br>
+    <input type="text" id="kisiSayisi" [(ngModel)]="item.kisiSayisi" name="kisiSayisi" required>
+  </div>
+
+  <div>
+    <label for="kapiSayisi">Kapı Sayısı:</label><br>
+    <input type="text" id="kapiSayisi" [(ngModel)]="item.kapiSayisi" name="kapiSayisi" required>
+  </div>
+
+  <div>
+    <label for="klimaBilgisi">Klima Bilgisi:</label><br>
+    <input type="text" id="klimaBilgisi" [(ngModel)]="item.klimaBilgisi" name="klimaBilgisi" required>
+  </div>
+  <br><br>
+  <button type="submit"  (click)="onSubmit()">Kaydet</button>
+
+</form>
+
+
+
+
+
+  </div>
+  

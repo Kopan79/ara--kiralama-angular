@@ -1,0 +1,44 @@
+
+
+<br>
+<br>
+<br>
+<br>
+<div>
+  <input type="number" [(ngModel)]="carId" placeholder="Araç ID">
+  <button (click)="getCarDetails()">GETİR</button>
+</div>
+
+
+<form (ngSubmit)="saveCar()" class="car-form">
+    <label for="marka">Marka:</label>
+    <input type="text" id="marka" [(ngModel)]="arac.marka" name="Marka">
+  
+    <label for="model">Model:</label>
+    <input type="text" id="model" [(ngModel)]="arac.model" name="Model">
+   
+    <label for="tipi">Tipi:</label>
+    <input type="text" id="tipi" [(ngModel)]="arac.tipi" name="Tipi">
+
+    <label for="resim">Resim:</label>
+    <input type="text" id="resim" [(ngModel)]="arac.resim" name="Resim">
+
+    <label for="vitesTuru">Vites Türü:</label>
+    <input type="text" id="vitesTuru" [(ngModel)]="arac.vitesTuru" name="vitesTuru">
+
+    <label for="gunlukUcret">Günlük Ücret:</label>
+    <input type="text" id="gunlukUcret" [(ngModel)]="arac.gunlukUcret" name="gunlukUcret">
+
+    <label for="kisiSayisi">Kişi Sayısı:</label>
+    <input type="text" id="kisiSayisi" [(ngModel)]="arac.kisiSayisi" name="kisiSayisi">
+
+    <label for="kapiSayisi">Kapı Sayısı:</label>
+    <input type="text" id="kapiSayisi" [(ngModel)]="arac.kapiSayisi" name="kapiSayisi">
+
+    <label for="klimaBilgisi">Klima Bilgisi:</label>
+    <input type="text" id="klimaBilgisi" [(ngModel)]="arac.klimaBilgisi" name="klimaBilgisi">
+
+    <button type="submit" (click)="saveCar()">Kaydet</button>
+
+
+</form>

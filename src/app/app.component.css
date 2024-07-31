@@ -1,0 +1,12 @@
+.button-container {
+    display: flex;
+    gap: 10px; /* Butonlar arasına boşluk ekler */
+  }
+  
+  button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 10x solid hsl(0, 0%, 96%);
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,12 @@
+.car-form {
+    width: 300px; /* Formun genişliğini belirleyin */
+    margin: 10px; /* Ortalamak için */
+    margin-left: 3px;
+}
+
+.car-form label, 
+.car-form input {
+    display: block;
+    width: 100%; /* Tam genişlik */
+    margin-bottom: 10px; /* Elemanlar arasındaki boşluk */
+}
