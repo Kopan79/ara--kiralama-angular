@@ -21,18 +21,8 @@ toggleFrom3() {
 }
 
 
-
-showForm2: any;
-toggleFrom2() {
-  this.showForm2 = !this.showForm2
-}
-
 deleteId: any;
-onDelete() {
-throw new Error('Method not implemented.');
-}
 
-  
   showForm = false;
   toggleFrom(){
     this.showForm = !this.showForm
@@ -40,14 +30,12 @@ throw new Error('Method not implemented.');
   
 
 data: any;
-  // dataService: any;
-
-
- // Bileşen içinde kullanılacak metotlar burada tanımlanabilir
+ 
+ 
  constructor(private dataService: DataService,private router: Router) { }
 
  ngOnInit(): void {
-  console.log("this is a first message from Hayro1");
+ 
   this.getData();
 
 }
@@ -70,10 +58,18 @@ data: any;
     console.log('Edit car with ID:', id);
     this.router.navigate(['/edit-car', id]);
    
-    // Burada, düzenleme işlemi için gerekli olan rotaya yönlendirme yapabilirsiniz veya modali açabilirsiniz
+    
   }
 
- 
+  deleteCar(id : any){ 
+    
+    this.dataService.deleteCar(id).subscribe(res =>{ 
+     
+    }) 
+    location.reload();
+  }
+
+
   
 
 }

@@ -1,12 +1,39 @@
 .button-container {
     display: flex;
-    gap: 10px; /* Butonlar arasına boşluk ekler */
+    gap: 10cm; 
   }
   
   button {
-    padding: 10px 30px;
+    padding: 10px 50px;
     font-size: 16px;
     border: 10x solid hsl(0, 0%, 96%);
     cursor: pointer;
   }
-  
+
+  .large-table {
+    width: 95%; /* Tablo genişliği sayfanın %90'ı kadar olur */
+    margin: 20px auto; /* Ortalanmış ve üstten alttan boşluk */
+    border-collapse: collapse; /* Kenarlıkları birleştirir */
+}
+
+.large-table th,
+.large-table td {
+    border: 1px solid #fffbfb; /* Hücre kenarlıkları */
+    padding: 15px; /* Hücre içi boşluk */
+    text-align: left; /* Metin hizalaması */
+    font-size: 18px; /* Yazı boyutu */
+}
+
+.large-table th {
+    background-color: #5c725c; /* Başlık hücrelerinin arka plan rengi */
+    color: white; /* Başlık hücrelerinin yazı rengi */
+}
+
+.large-table tr:nth-child(even) {
+    background-color: #c22525; /* Çift sıra arka plan rengi */
+}
+.content{
+
+max-width: 80% !important;
+
+}

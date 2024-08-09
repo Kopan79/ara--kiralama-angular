@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, concatWith, Observable } from 'rxjs';
 import { Arac } from './arac.model';
+import { DeleteCarComponent } from './delet-car/delet-car.component';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  getItems() {
+    throw new Error('Method not implemented.');
+  }
   getCarDetails(carId: any) {
     throw new Error('Method not implemented.');
   }
@@ -42,8 +46,8 @@ export class DataService {
     return this.http.post<Arac>(`${this.apiUrl}`, arac);
   }
 
-  deleteItem(id: string): Observable<any> {
-    return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  deleteCar(id: any){
+    return this.http.delete(`${this.apiUrl}/${id}`); 
   }
   
 }

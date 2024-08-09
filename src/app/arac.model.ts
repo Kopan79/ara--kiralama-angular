@@ -10,6 +10,7 @@ export class Arac {
   kisiSayisi: number;
   kapiSayisi: number;
   klimaBilgisi: string;
+  static id: any;
   
   constructor(id: number, marka: string, Model: string, Tipi: string, Resim: string, VitesTuru: string, YakitTuru: string, GunlukUcret: number, KisiSayisi: number, KapiSayisi: number, KlimaBilgisi: string)
   {

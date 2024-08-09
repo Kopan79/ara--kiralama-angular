@@ -49,7 +49,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #04a304;
+    background-color: #5c725c;
     justify-content: center;
     color: white;
     font-weight: 600;
@@ -313,46 +313,35 @@
       visibility: hidden;
     }
   }
+
+
+  
 </style>
 
-<!-- Toolbar -->
+
 
   
 <div class="toolbar" role="banner">
     
-<!-- <img src="/assets/fotolar/home.jpg" alt=""> -->
+
     <h3>HAYKO Araç Kiralama</h3>
     <br><br><br><br><br>
-    <!-- <img src=".\assets\fotolar\home.jpg" alt="Hayko Logo" /> -->
-
-    
+    <button class="right-button"><a href="src\kullanici\kullanici.html" >SAYFAYI YENİLE </a></button> 
+   
   </div>
+ 
 
 
 <div class="content" role="main">
 
   
-  
-
-
-  <!-- <div *ngIf="data">
-    <ul>
-      <li *ngFor="let item of data">{{ item.Araclar }}</li>
-    </ul>
-  </div> -->
-
-  <!-- <div *ngIf="data">   // bu get ile verileri vei tabanındaki gibi çeker 
-    <h1>Araçlar:</h1>
-    <pre>{{ data | json }}</pre>      
-  </div> -->
+<div class="card-container"><h1 style="color: #f1b532;"><b>-- ARAÇ LİSTESİ --</b></h1></div>
 
 
 
-  
-<a href="src\kullanici\kullanici.html" target="_blank">kullanici sayfası</a>
 
   <table class="table">
-    <thead class="table table-dark">
+    <thead class="table table-dark" class="large-table" >
       <tr>
         <th scope="col">Id</th>
         <th scope="col">Marka</th>
@@ -389,88 +378,40 @@
         <td>{{ item.kisiSayisi }}</td>
         <td>{{ item.kapiSayisi }}</td>
         <td>{{ item.klimaBilgisi }}</td>
-       
         <td>
-          <!-- <button (click)="editCar(item.id)">Düzenle</button> -->
-        </td>
-
-              <!-- app.component.html -->
-       
-        <!-- app.component.html -->
+          <button (click)="deleteCar(item.id)" class="btn btn-danger btn-sm ms-2">SİL</button>
         
-              
-
-        <!-- Diğer veriler buraya eklenebilir -->
-
-
-
-
-
-
-      </tr>
-      
-      <!-- <div>
-        <div></div>
-        <button (click)="toggleFrom()">YENİ ARAÇ EKLEME</button>
-        <app-create-item *ngIf="showForm"></app-create-item>
-      </div>
-    </tbody>
-  
-
-
-  <div>
-    <div></div>
-    <button (click)="toggleFrom2()"> ARAÇ SİLME</button>
-  <app-delete-car *ngIf="showForm2"></app-delete-car>
-</div> -->
-
-
-
-<!-- 
-<div>
-  <div></div>
-  <button (click)="toggleFrom3()"> DÜZENLE</button>
-  <app-edit-car *ngIf="showForm3"></app-edit-car>
-</div> -->
-
-
+        </td>
+          
 </table>
 
 
-<div class="button-container">
+<div class="button-container" >
 
-  <button><div>
+  <button style="background-color: #606360;"><div>
     <div></div>
-    <button (click)="toggleFrom()">YENİ ARAÇ EKLEME</button>
+    <button style="font-family: Arial, Helvetica, sans-serif;"  (click)="toggleFrom()" >YENİ ARAÇ  EKLEME</button>
     <app-create-item *ngIf="showForm"></app-create-item>
   </div></button>
 
-  <button><div>
+  <!-- <button><div>
     <div></div>
     <button (click)="toggleFrom2()"> ARAÇ SİLME</button>
   <app-delete-car *ngIf="showForm2"></app-delete-car>
-</div></button>
+</div></button> -->
 
-  <button><div>
-    <div></div>
-    <button (click)="toggleFrom3()"> DÜZENLE</button>
+  <button style="background-color: #606360;"><div >
+    
+    <button  style="font-family: Arial, Helvetica, sans-serif;"  (click)="toggleFrom3()" > DÜZENLE</button>
     <app-edit-car *ngIf="showForm3"></app-edit-car>
   </div></button>
 
 </div>
 
 
-<!-- app.component.html -->
-
-  
-
   <input type="hidden" #selection>
 
   
-
- 
-  
-
   <!-- Links -->
  
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

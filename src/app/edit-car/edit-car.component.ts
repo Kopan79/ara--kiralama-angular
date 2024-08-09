@@ -45,7 +45,7 @@ export class EditCarComponent implements OnInit {
   }
 
   saveCar(): void {
-    debugger;
+    
     if (this.arac) {
       this.carService.updateCar(this.arac).subscribe(() => {
         alert('Araç bilgileri başarıyla güncellendi!');
